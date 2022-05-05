@@ -25,7 +25,14 @@ class ViewController: UIViewController {
 
 }
 
-extension
+extension ViewController: LoginScreenProtocol{
+    func actionLoginButton() {
+    }
+    
+    func actionRegisterButton() {
+    }
+   
+}
 
 extension ViewController: UITextFieldDelegate{
     
