@@ -59,7 +59,7 @@ class LoginScreen: UIView {
         tf.borderStyle = .roundedRect
         tf.keyboardType = .default
         tf.isSecureTextEntry = true
-        tf.placeholder = "Digite sua senha"
+        tf.placeholder = "password"
         tf.textColor = .darkGray
         return tf
     }()
