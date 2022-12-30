@@ -98,6 +98,7 @@ class LoginScreen: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     func configSuperView(){
+        configButonEnable (false)
         self.addSubview(loginLabel)
         self.addSubview(logoAppImageView)
         self.addSubview(emailTextField)
@@ -117,6 +118,29 @@ class LoginScreen: UIView {
     
     @objc private func tappedRegisterButton(){
         self.delegate?.actionRegisterButton()
+    }
+    
+    func validaTextFieds() {
+        let email: String = self.emailTextField.text ?? ""
+        let password: String = self.passwordTextField.text ?? ""
+        
+        if !email.isEmpty && !password.isEmpty{
+            self.configButonEnable(true)
+        }else{
+            self.configButonEnable(false)
+
+        }
+
+    }
+    
+    private func configButonEnable (_ enable: Bool){
+        if enable{
+            loginButton.setTitleColor(.white, for: .normal)
+            loginButton.isEnabled = true
+        }else{
+            loginButton.setTitleColor(.lightGray, for: .normal)
+            loginButton.isEnabled = false
+        }
     }
     
     private func setupConstrains(){
