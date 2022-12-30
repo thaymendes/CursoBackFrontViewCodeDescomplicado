@@ -7,7 +7,11 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, RegisterScreenProtocol {
+    func actionRegisterButton() {
+        print("prit")
+    }
+    
         
     var registerScreen: RegisterScreen?
     
@@ -18,16 +22,24 @@ class RegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.leftBarButtonItem = UIBarButtonItem(
-            barButtonSystemItem: .camera,
-            target: nil,
-            action: nil
-        )
-
+        navigationItem.backBarButtonItem = UIBarButtonItem(image: UIImage(named: "back"), style: .plain, target: nil, action: #selector(close))
+        navigationController?.navigationBar.tintColor = .black
+        self.navigationController?.navigationBar.topItem?.title = ""
+        
+        self.registerScreen?.configTextFieldDelegate(delegate: self)
+        self.registerScreen?.delegate(delegate: self)
 
     }
     
+    @objc func close(){
+        navigationController?.popViewController(animated: true)
+    }
 
+}
 
-
+extension RegisterViewController: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }

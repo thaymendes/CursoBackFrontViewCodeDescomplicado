@@ -21,6 +21,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         loginScreen?.delegate(delegate: self)
         self.loginScreen?.configTextFieldDelegate(delegate: self)
+    
     }
 
 }
