@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol RegisterScreenProtocol: class{
+protocol RegisterScreenProtocol: AnyObject{
     func actionRegisterButton()
 }
 
