@@ -17,6 +17,7 @@
 		5CB6FB65282454C200E3F648 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB6FB64282454C200E3F648 /* RegisterViewController.swift */; };
 		5CB6FB672824580300E3F648 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB6FB662824580300E3F648 /* RegisterScreen.swift */; };
 		DB50FE902965EEB100066192 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB50FE8F2965EEB100066192 /* GoogleService-Info.plist */; };
+		DBEB923729660818009367D0 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB923629660818009367D0 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		5CB6FB64282454C200E3F648 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5CB6FB662824580300E3F648 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		DB50FE8F2965EEB100066192 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DBEB923629660818009367D0 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		F8C95EF84828D955059F2FC4 /* Pods-LoginViewCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginViewCode.debug.xcconfig"; path = "Target Support Files/Pods-LoginViewCode/Pods-LoginViewCode.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +61,7 @@
 		5C772C202806554800B3650B = {
 			isa = PBXGroup;
 			children = (
+				DBEB9235296607F0009367D0 /* Alert */,
 				5C772C2B2806554800B3650B /* LoginViewCode */,
 				5C772C2A2806554800B3650B /* Products */,
 				BFEC1433E61C0BD893E822EF /* Pods */,
@@ -146,6 +149,14 @@
 				2585CAF56ACD52235CCB82EB /* Pods-LoginViewCode.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DBEB9235296607F0009367D0 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				DBEB923629660818009367D0 /* Alert.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +280,7 @@
 				5C772C442806646B00B3650B /* LoginScreen.swift in Sources */,
 				5C772C2D2806554800B3650B /* AppDelegate.swift in Sources */,
 				5C772C2F2806554800B3650B /* SceneDelegate.swift in Sources */,
+				DBEB923729660818009367D0 /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

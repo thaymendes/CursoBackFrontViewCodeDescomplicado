@@ -15,9 +15,11 @@ class RegisterViewController: UIViewController, RegisterScreenProtocol {
        
         self.auth?.createUser(withEmail: register.getEmail(), password: register.getPassword(), completion: { result, error in
             if error != nil{
-                print("\(error)!")
+                self.alert?.getAlert(titulo: "Atencao", mensage: "Erro ao cadastrar")
             }else{
-                print("Sucesso!")
+                self.alert?.getAlert(titulo: "Parabens ", mensage: "cadastrado com sucesso", completion: { [self] in
+                    close()
+                })
 
             }
         })
@@ -25,6 +27,7 @@ class RegisterViewController: UIViewController, RegisterScreenProtocol {
     
     var auth: Auth?
     var registerScreen: RegisterScreen?
+    var alert: Alert?
     
     override func loadView() {
         self.registerScreen = RegisterScreen()
@@ -40,6 +43,7 @@ class RegisterViewController: UIViewController, RegisterScreenProtocol {
         self.registerScreen?.configTextFieldDelegate(delegate: self)
         self.registerScreen?.delegate(delegate: self)
         self.auth = Auth.auth()
+        self.alert=Alert(controller: self)
         
     }
     
