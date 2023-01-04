@@ -16,6 +16,7 @@
 		5C772C442806646B00B3650B /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C772C432806646B00B3650B /* LoginScreen.swift */; };
 		5CB6FB65282454C200E3F648 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB6FB64282454C200E3F648 /* RegisterViewController.swift */; };
 		5CB6FB672824580300E3F648 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB6FB662824580300E3F648 /* RegisterScreen.swift */; };
+		DB50FE902965EEB100066192 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB50FE8F2965EEB100066192 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		5C772C432806646B00B3650B /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		5CB6FB64282454C200E3F648 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5CB6FB662824580300E3F648 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		DB50FE8F2965EEB100066192 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F8C95EF84828D955059F2FC4 /* Pods-LoginViewCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginViewCode.debug.xcconfig"; path = "Target Support Files/Pods-LoginViewCode/Pods-LoginViewCode.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +84,7 @@
 				5C772C352806554B00B3650B /* Assets.xcassets */,
 				5C772C372806554B00B3650B /* LaunchScreen.storyboard */,
 				5C772C3A2806554B00B3650B /* Info.plist */,
+				DB50FE8F2965EEB100066192 /* GoogleService-Info.plist */,
 			);
 			path = LoginViewCode;
 			sourceTree = "<group>";
@@ -142,7 +145,6 @@
 				F8C95EF84828D955059F2FC4 /* Pods-LoginViewCode.debug.xcconfig */,
 				2585CAF56ACD52235CCB82EB /* Pods-LoginViewCode.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,6 +210,7 @@
 			files = (
 				5C772C392806554B00B3650B /* LaunchScreen.storyboard in Resources */,
 				5C772C362806554B00B3650B /* Assets.xcassets in Resources */,
+				DB50FE902965EEB100066192 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

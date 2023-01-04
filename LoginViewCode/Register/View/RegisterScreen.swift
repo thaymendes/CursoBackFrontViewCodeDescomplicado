@@ -40,7 +40,6 @@ class RegisterScreen: UIView {
         tf.backgroundColor = .white
         tf.borderStyle = .roundedRect
         tf.keyboardType = .emailAddress
-        tf.isSecureTextEntry = true
         tf.placeholder = "youremail@exemple.com"
         tf.font = UIFont.systemFont(ofSize: 14)
         tf.textColor = .darkGray
@@ -130,6 +129,15 @@ class RegisterScreen: UIView {
         }
     }
     
+    
+    func getEmail() -> String {
+        return self.emailTextField.text ?? ""
+    }
+
+    func getPassword() -> String {
+        return self.passwordTextField.text ?? ""
+    }
+    
     private func setupConstraints(){
         NSLayoutConstraint.activate([
             
@@ -164,8 +172,9 @@ class RegisterScreen: UIView {
         self.imageAddUser.snp.makeConstraints { make in
             make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(20)
             make.centerX.equalToSuperview()
-            make.height.equalTo(150)
-            make.width.equalTo(150)
+//            make.height.equalTo(150)
+//            make.width.equalTo(150)
+            make.height.width.equalTo(150)
             
             self.emailTextField.snp.makeConstraints { make in
                 make.top.equalTo(self.imageAddUser.snp.bottom).offset(10)

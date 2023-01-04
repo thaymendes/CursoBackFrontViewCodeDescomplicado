@@ -154,6 +154,15 @@ class LoginScreen: UIView {
         }
     }
     
+    
+    func getEmail() -> String {
+        return self.emailTextField.text ?? ""
+    }
+
+    func getPassword() -> String {
+        return self.passwordTextField.text ?? ""
+    }
+    
     private func setupConstrains(){
         NSLayoutConstraint.activate([
 //            loginLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 20),
