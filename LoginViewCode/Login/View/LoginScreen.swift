@@ -92,7 +92,7 @@ class LoginScreen: UIView {
         self.backgroundColor = UIColor(red: 25/255, green: 117/255, blue: 104/255, alpha: 1.0)
         configSuperView()
         setupConstrains()
-        configButonEnable(false)
+       // configButonEnable(false)
         
         
         configLoginLabelContraiants()
@@ -109,7 +109,6 @@ class LoginScreen: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     func configSuperView(){
-        configButonEnable (false)
         self.addSubview(loginLabel)
         self.addSubview(logoAppImageView)
         self.addSubview(emailTextField)

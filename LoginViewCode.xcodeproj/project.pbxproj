@@ -18,6 +18,12 @@
 		5CB6FB672824580300E3F648 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB6FB662824580300E3F648 /* RegisterScreen.swift */; };
 		DB50FE902965EEB100066192 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB50FE8F2965EEB100066192 /* GoogleService-Info.plist */; };
 		DBEB923729660818009367D0 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB923629660818009367D0 /* Alert.swift */; };
+		DBEB923C29661CF6009367D0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB923B29661CF6009367D0 /* HomeViewController.swift */; };
+		DBEB923E29661E39009367D0 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB923D29661E39009367D0 /* HomeScreen.swift */; };
+		DBEB9241296716A9009367D0 /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB9240296716A9009367D0 /* UserDetailTableViewCell.swift */; };
+		DBEB924429671C30009367D0 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB924329671C30009367D0 /* File.swift */; };
+		DBEB924829685240009367D0 /* SportsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB924729685240009367D0 /* SportsTableViewCell.swift */; };
+		DBEB924A29685389009367D0 /* SportsSportsTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEB924929685389009367D0 /* SportsSportsTableViewCellScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +41,12 @@
 		5CB6FB662824580300E3F648 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		DB50FE8F2965EEB100066192 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DBEB923629660818009367D0 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		DBEB923B29661CF6009367D0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DBEB923D29661E39009367D0 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		DBEB9240296716A9009367D0 /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
+		DBEB924329671C30009367D0 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		DBEB924729685240009367D0 /* SportsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsTableViewCell.swift; sourceTree = "<group>"; };
+		DBEB924929685389009367D0 /* SportsSportsTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsSportsTableViewCellScreen.swift; sourceTree = "<group>"; };
 		F8C95EF84828D955059F2FC4 /* Pods-LoginViewCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginViewCode.debug.xcconfig"; path = "Target Support Files/Pods-LoginViewCode/Pods-LoginViewCode.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +73,7 @@
 		5C772C202806554800B3650B = {
 			isa = PBXGroup;
 			children = (
+				DBEB923829661C05009367D0 /* Home */,
 				DBEB9235296607F0009367D0 /* Alert */,
 				5C772C2B2806554800B3650B /* LoginViewCode */,
 				5C772C2A2806554800B3650B /* Products */,
@@ -157,6 +170,75 @@
 				DBEB923629660818009367D0 /* Alert.swift */,
 			);
 			path = Alert;
+			sourceTree = "<group>";
+		};
+		DBEB923829661C05009367D0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DBEB924229671C21009367D0 /* Model */,
+				DBEB923F29671678009367D0 /* Cell */,
+				DBEB923A29661C27009367D0 /* View */,
+				DBEB923929661C0F009367D0 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DBEB923929661C0F009367D0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DBEB923B29661CF6009367D0 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DBEB923A29661C27009367D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBEB923D29661E39009367D0 /* HomeScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBEB923F29671678009367D0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DBEB92462968521C009367D0 /* SportsTableViewCell */,
+				DBEB9245296851F3009367D0 /* UserDetailTableViewCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DBEB924229671C21009367D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBEB924329671C30009367D0 /* File.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBEB9245296851F3009367D0 /* UserDetailTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DBEB9240296716A9009367D0 /* UserDetailTableViewCell.swift */,
+			);
+			path = UserDetailTableViewCell;
+			sourceTree = "<group>";
+		};
+		DBEB92462968521C009367D0 /* SportsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DBEB924B29685392009367D0 /* CustomView */,
+				DBEB924729685240009367D0 /* SportsTableViewCell.swift */,
+			);
+			path = SportsTableViewCell;
+			sourceTree = "<group>";
+		};
+		DBEB924B29685392009367D0 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				DBEB924929685389009367D0 /* SportsSportsTableViewCellScreen.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,12 +356,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBEB923C29661CF6009367D0 /* HomeViewController.swift in Sources */,
 				5CB6FB672824580300E3F648 /* RegisterScreen.swift in Sources */,
 				5C772C312806554800B3650B /* LoginViewController.swift in Sources */,
 				5CB6FB65282454C200E3F648 /* RegisterViewController.swift in Sources */,
 				5C772C442806646B00B3650B /* LoginScreen.swift in Sources */,
+				DBEB9241296716A9009367D0 /* UserDetailTableViewCell.swift in Sources */,
+				DBEB923E29661E39009367D0 /* HomeScreen.swift in Sources */,
 				5C772C2D2806554800B3650B /* AppDelegate.swift in Sources */,
 				5C772C2F2806554800B3650B /* SceneDelegate.swift in Sources */,
+				DBEB924A29685389009367D0 /* SportsSportsTableViewCellScreen.swift in Sources */,
+				DBEB924429671C30009367D0 /* File.swift in Sources */,
+				DBEB924829685240009367D0 /* SportsTableViewCell.swift in Sources */,
 				DBEB923729660818009367D0 /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
